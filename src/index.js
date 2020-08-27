@@ -4,31 +4,29 @@ import {showContactInfo} from './contact';
 
 let content = document.querySelector('#content');
 
-console.log('hello world!');
-
-
-
 loadPage(content);
 loadHome(content);
-//showMenu(content);
-//showContactInfo(content);
 
 let navbar = document.querySelector('#navbar');
 let tabs = document.querySelectorAll('.tab');
 
-
+//Tab functionality
+let currentTab;
 navbar.onclick = (e) => {
-    let tab = e.target;
-    alert(tab);
-    if(tab.id == 'home'){
-        content.removeChild('div');
+    let tab = e.target.getAttribute('id');
+    
+    
+    if(tab == 'home' && currentTab != 'home'){
+        content.removeChild(content.lastChild);
         loadHome(content);
-        alert('hello');
-    } else if (tab.id == 'menu'){
-        content.removeChild('div');
+        currentTab = 'home';
+    } else if (tab == 'menu' && currentTab != 'menu'){
+        content.removeChild(content.lastChild);
         showMenu(content);
-    } else if (tab.id == 'contact'){
-        content.removeChild('div');
+        currentTab = 'menu';
+    } else if (tab == 'contact' && currentTab != 'contact'){
+        content.removeChild(content.lastChild);
         showContactInfo(content);
+        currentTab = 'contact';
     }
 }
