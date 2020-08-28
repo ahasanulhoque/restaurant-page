@@ -5,7 +5,7 @@ function showMenu(content){
     menu.classList.add('tab-copy');
 
     menuText.innerHTML = 'Pasta carbonara - $15';
-    menuText.innerHTML = menuText.innerHTML + 'Lasagna - $13';
+    menuText.innerHTML = menuText.innerHTML + 'Lasagna - $13';     
 
     menu.appendChild(menuText);
     content.appendChild(menu);
