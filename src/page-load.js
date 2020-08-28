@@ -47,7 +47,7 @@ function loadHome(content){
 
     home.classList.add('tab-copy');
 
-    mainImage.src = "../src/images/restaurant.jpg";
+    mainImage.src = "images/restaurant.jpg";
     copy.innerHTML = "With ambience and only fresh ingredients, dining a our restaurant is an experience to savor. Come enjoy a dish prepared by our world-class chefs.";
 
     home.appendChild(mainImage);
