@@ -1,0 +1,45 @@
+html {
+    background-image: url("../src/images/background.jpg");
+}
+
+#content {
+    text-align: center;
+    margin: auto;
+    background:#ffffcc;
+    width: 90rem;
+    height: 40rem;
+}
+
+#navbar {
+    display: flex;
+    width: 40rem;
+    margin: auto;
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+.tab {
+    border: solid;
+    width: 5rem;
+    height: 2rem;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: gray;
+}
+
+.tab:hover {
+    cursor: pointer;
+}
+
+.tab-active {
+    background: white;
+}
+
+.tab-copy {
+    margin: auto;
+    width: 42.5rem;
+    height: 30rem;
+    background: darkgray;
+}

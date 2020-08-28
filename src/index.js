@@ -19,19 +19,28 @@ const TabController = (() => {
     let currentTab;
     navbar.onclick = (e) => {
         let tab = e.target.getAttribute('id');
+        e.target.classList.add('tab-active');
         
         
         if(tab == 'home' && currentTab != 'home'){
+            //Remove currently shown copy, add selected copy
             content.removeChild(content.lastChild);
             loadHome(content);
+            //Toggle tab classes to change styling
+            document.getElementById('menu').classList.remove('tab-active');
+            document.getElementById('contact').classList.remove('tab-active');
             currentTab = 'home';
         } else if (tab == 'menu' && currentTab != 'menu'){
             content.removeChild(content.lastChild);
             showMenu(content);
+            document.getElementById('home').classList.remove('tab-active');
+            document.getElementById('contact').classList.remove('tab-active');
             currentTab = 'menu';
         } else if (tab == 'contact' && currentTab != 'contact'){
             content.removeChild(content.lastChild);
             showContactInfo(content);
+            document.getElementById('home').classList.remove('tab-active');
+            document.getElementById('menu').classList.remove('tab-active');
             currentTab = 'contact';
         }
     }
