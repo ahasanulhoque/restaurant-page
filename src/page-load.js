@@ -26,7 +26,7 @@ function loadPage(content){
 
     navHome.classList.add('tab-active');
 
-    title.innerHTML = "Ahasanul's restaurant";   
+    title.innerHTML = "The White Hart Lane";   
 
     content.appendChild(title);
 
