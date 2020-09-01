@@ -1,5 +1,6 @@
 function showMenu(content){
     let menu = document.createElement('div');
+    menu.id = 'menu-content';
     menu.classList.add('tab-copy');
 
     let appetizers = document.createElement('div');

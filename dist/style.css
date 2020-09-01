@@ -8,17 +8,34 @@ html {
     text-align: center;
     margin: auto;
     background: hsla(30, 100%, 85%, 75%);
-    width: 90rem;
+    max-width: 90rem;
     height: 40rem;
     padding-top: 1rem;
 }
 
 #navbar {
     display: flex;
-    width: 52.5rem;
+    max-width: 52.5rem;
     margin: auto;
     list-style-type: none;
     padding-top: 0.5rem;
+}
+
+#menu-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu-content div {
+    flex-basis: 10rem;
+    margin: auto;   
+    width: 21rem;
+}
+
+#menu-content div p {
+    text-align: start;
 }
 
 .tab {
