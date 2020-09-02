@@ -15,7 +15,7 @@ html {
 
 #navbar {
     display: flex;
-    max-width: 52.5rem;
+    max-width: 52.3rem;
     margin: auto;
     list-style-type: none;
     padding-top: 0.5rem;
@@ -30,8 +30,9 @@ html {
 
 #menu-content div {
     flex-basis: 10rem;
-    margin: auto;   
     width: 21rem;
+    margin: auto;
+    
 }
 
 #menu-content div p {
@@ -62,4 +63,27 @@ html {
     height: 30rem;
     background: white;
     padding-top: 1rem;
+}
+
+.tab-copy img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px){
+    #content {
+        width: 40rem;
+    }
+    
+    #navbar {
+        width: 32.4rem;
+    }
+
+    .tab-copy {
+        width: 30rem;
+    }
+
+    #menu-content div {
+        width: 13rem;
+    }
 }

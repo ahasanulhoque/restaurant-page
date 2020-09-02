@@ -48,7 +48,9 @@ function loadHome(content){
     home.classList.add('tab-copy');
 
     mainImage.src = "images/restaurant.jpg";
-    copy.innerHTML = "With ambience and only fresh ingredients, dining a our restaurant is an experience to savor. Come enjoy a dish prepared by our world-class chefs.";
+    copy.innerHTML = `Come down to the White Hart Lane! With excellent service and the
+                        best chefs in the city, you'll be sure to savor your meal. Make
+                        a reservation today!`;
 
     home.appendChild(mainImage);
     home.appendChild(copy);
