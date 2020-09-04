@@ -39,6 +39,28 @@ html {
     text-align: start;
 }
 
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#restaurant-contact {
+    font-size: 1.5rem;
+}
+
+#personal-contact{
+    position: absolute;
+    bottom: 0; 
+    width: 100%;   
+}
+
+#personal-contact a {
+    margin: 2rem;
+    text-decoration: none;
+}
+
 .tab {
     width: 5rem;
     height: 2rem;
