@@ -6,10 +6,10 @@ function loadPage(content){
     let title = document.createElement('h1');
     
     //Navbar to select different tabs
-    let navbar = document.createElement('ul');
-    let navHome = document.createElement('li');
-    let navMenu = document.createElement('li');
-    let navContact = document.createElement('li');
+    let navbar = document.createElement('div');
+    let navHome = document.createElement('button');
+    let navMenu = document.createElement('button');
+    let navContact = document.createElement('button');
 
     navHome.innerHTML = 'Home';
     navMenu.innerHTML = 'Menu';

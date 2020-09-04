@@ -30,13 +30,14 @@ html {
 
 #menu-content div {
     flex-basis: 10rem;
-    width: 21rem;
+    width: 45%;
     margin: auto;
     
 }
 
 #menu-content div p {
     text-align: start;
+    margin-left: 5rem;
 }
 
 #contact-info {
