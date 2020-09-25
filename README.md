@@ -1,4 +1,4 @@
-[Demmo here](https://ahasanulhoque.github.io/restaurant-page/)
+[Live demo here](https://ahasanulhoque.github.io/restaurant-page/)
 
 This project was built for the Odin Project assignment here: https://www.theodinproject.com/courses/javascript/lessons/restaurant-page
 
